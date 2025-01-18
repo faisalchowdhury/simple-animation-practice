@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+      
+      .field {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #000000;
+        background-color: aquamarine;
+      }
+      .ball {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: peru;
+        position: relative;
+        animation: bounce;
+        animation: bounce 1.5s ease-in-out 0s infinite reverse ;
+
+      }
+
+      @keyframes bounce {
+            form {
+               left: 0px;
+            }
+            to{
+               left: 100px;
+            }
+           
+        }
+      .field_2 {
+        width: 600px;
+        height: 400px;
+        border: 1px solid #000;
+        background: darkorchid;
+
+      }
+
+      .ball_2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: crimson;
+        position: relative;
+        animation: model 2s linear 0s infinite reverse;
+      }
+      @keyframes model {
+        
+        0%{
+            left: 0px;
+            background: yellow;
+        }
+        25%{
+            left: 525px;
+            top: 0;
+            background-color: orangered;
+            
+        }
+        50% {
+            top: 350px;
+            left: 550px;
+            background: red;
+            width: 50px;
+            height: 50px;
+
+        }
+
+        100% {
+            top: 0px;
+            background-color: aliceblue;
+            left: 0px;
+        }
+      }
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="field">
+        <div class="ball">
+
+        </div>
+    </div>
+
+    <div class="field_2">
+        <div class="ball_2"></div>
+    </div>
+</body>
+</html>

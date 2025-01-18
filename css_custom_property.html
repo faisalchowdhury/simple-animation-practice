@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: green;
+        }
+        div{
+            border: 1px solid var(--primary-color);
+        }
+        h2 {
+            color: var(--primary-color);
+        }
+        p {
+            color: var(--primary-color);
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-rows: 500px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            gap: 20px;
+
+        }
+        .sidebar {
+            background: gray;
+        }
+        .content {
+            background: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Hello This is css custom property or you can say variable</h2>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, perferendis? Adipisci id quos sint itaque qui quod saepe impedit provident fugit, voluptatem illum odit placeat quasi ab voluptates ut sequi.</p>
+    </div>
+
+    <div class="dashboard">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main content</div>
+    </div>
+</body>
+</html>
